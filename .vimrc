@@ -37,7 +37,6 @@ Plugin 'lukaszb/vim-web-indent'
 Plugin 'AutoComplPop'
 Plugin 'mxw/vim-jsx'
 Plugin 'heavenshell/vim-jsdoc'
-Plugin 'git://github.com/fholgado/minibufexpl.vim.git'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-session'
 "Plugin 'LaTeX-Box-Team/LaTeX-Box'
@@ -50,8 +49,8 @@ Plugin 'tpope/vim-fugitive'
 "Plugin 'tpope/vim-liquid.git'
 "Plugin 'tpope/vim-surround.git'
 "Plugin 'tpope/vim-bundler.git'
-Plugin 'tpope/vim-unimpaired.git'
-Plugin 'tpope/vim-repeat.git'
+"Plugin 'tpope/vim-unimpaired.git'
+"Plugin 'tpope/vim-repeat.git'
 "Plugin 'tpope/vim-speeddating.git'
 "Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Plugin 'vim-ruby/vim-ruby.git'
@@ -86,3 +85,8 @@ if has('mouse')
 endif
 
 set laststatus=2
+set number
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set nowrap
