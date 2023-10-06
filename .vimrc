@@ -10,55 +10,22 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-"Plugin 'git://git.wincent.com/command-t.git'
-Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/nerdcommenter.git'
-Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdtree.git'
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'Lokaltog/vim-powerline'
-Plugin 'Lokaltog/vim-distinguished'
-Plugin 'vim-scripts/LargeFile.git'
-"Plugin 'jelera/vim-javascript-syntax'
-Plugin 'pangloss/vim-javascript.git'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'Raimondi/delimitMate'
-"Plugin 'Valloric/YouCompleteMe'
-Plugin 'marijnh/tern_for_vim'
-"Plugin 'rking/ag.vim'
-"Plugin 'joonty/vdebug.git'
-Plugin 'groenewege/vim-less'
-Plugin 'vim-scripts/taglist.vim'
-Plugin 'tjennings/git-grep-vim'
-Plugin 'tpope/vim-git'
-Plugin 'majutsushi/tagbar'
-Plugin 'mattn/emmet-vim'
-Plugin 'lukaszb/vim-web-indent'
-Plugin 'AutoComplPop'
-Plugin 'mxw/vim-jsx'
-Plugin 'heavenshell/vim-jsdoc'
-Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-session'
-"Plugin 'LaTeX-Box-Team/LaTeX-Box'
-" Plugin 'vim-scripts/tComment'
-"Plugin 'brookhong/DBGPavim'
-"Plugin 'garbas/vim-snipmate.git'
-"Plugin 'honza/vim-snippets.git'
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
-"Plugin 'tpope/vim-rails.git'
-"Plugin 'tpope/vim-liquid.git'
-"Plugin 'tpope/vim-surround.git'
-"Plugin 'tpope/vim-bundler.git'
-"Plugin 'tpope/vim-unimpaired.git'
-"Plugin 'tpope/vim-repeat.git'
-"Plugin 'tpope/vim-speeddating.git'
-"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-"Plugin 'vim-ruby/vim-ruby.git'
-"Plugin 'bonsaiben/bootstrap-snippets.git'
-"Plugin 'tomtom/tlib_vim.git'
-"Plugin 'MarcWeber/vim-addon-mw-utils.git'
-"Plugin 'klen/python-mode.git'
-"Plugin 'skwp/vim-rspec.git'
+" plugin from http://vim-scripts.org/vim/scripts.html
+" Plugin 'L9'
+" Git plugin not hosted on GitHub
+Plugin 'git://git.wincent.com/command-t.git'
+" git repos on your local machine (i.e. when working on your own plugin)
+Plugin 'file:///home/gmarik/path/to/plugin'
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Install L9 and avoid a Naming conflict if you've already installed a
+" different version somewhere else.
+" Plugin 'ascenator/L9', {'name': 'newL9'}
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -74,16 +41,7 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-
-let g:session_autosave = 'no'
-" In many terminal emulators the mouse works just fine, thus enable it.
-if has('mouse')
-  " turn off the mouse with :set mouse=
-  set mouse=a
-  map <leader>mm :set mouse=a<CR>
-  map <leader>mn :set mouse=<CR>
-endif
-
+"
 set laststatus=2
 set number
 set tabstop=4
